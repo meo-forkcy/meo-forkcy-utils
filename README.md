@@ -8,8 +8,6 @@ A handy collection of modern JavaScript utility functions for working with strin
 npm install meo-forkcy-utils
 ```
 
-````
-
 ## 📦 Usage
 
 ```js
@@ -97,7 +95,3 @@ npm run example
 ## 🪪 License
 
 MIT © [meo-forkcy](https://github.com/meo-forkcy)
-
-
-
-````
