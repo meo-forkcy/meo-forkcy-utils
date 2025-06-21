@@ -1,6 +1,6 @@
 {
   "name": "meo-forkcy-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A handy utils package with time, random, string helpers, etc...",
   "keywords": [
     "utils",
@@ -11,7 +11,10 @@
     "random",
     "string",
     "array",
-    "misc"
+    "misc",
+    "airdrop",
+    "utility",
+    "blackcatsyndicate"
   ],
   "homepage": "https://github.com/meo-forkcy/meo-forkcy-utils#readme",
   "bugs": {

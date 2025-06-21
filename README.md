@@ -1,22 +1,24 @@
 # meo-forkcy-utils
 
-A handy collection of JavaScript utility functions for time, random, string, array, and misc operations.
+A handy collection of modern JavaScript utility functions for working with strings, arrays, numbers, time, randomness, and more.
 
-## Installation
+## 🚀 Installation
 
 ```bash
 npm install meo-forkcy-utils
 ```
 
-## Usage
+````
 
-```javascript
+## 📦 Usage
+
+```js
 const utils = require("meo-forkcy-utils");
 ```
 
-## Examples
+Or use destructuring:
 
-```javascript
+```js
 const {
   getRandomNumber,
   getRandomString,
@@ -26,69 +28,76 @@ const {
   getTime,
   sleep,
 } = require("meo-forkcy-utils");
+```
 
-// Generate random number between 1 and 100
+## 🔍 Examples
+
+```js
 console.log("Random Number (1-100):", getRandomNumber(1, 100));
 
-// Generate random 10-character string
 console.log("Random String (10):", getRandomString(10));
 
-// Generate random color
 console.log("Random Color:", randomColor());
 
-// Capitalize text
 console.log("Capitalize:", capitalize("meo forkcy"));
 
-// Convert to URL-friendly slug
 console.log("Slugify:", slugify("This Cat is not a Robot!"));
 
-// Format current timestamp
 console.log("Time Now:", getTime(Date.now()));
 
-// Async sleep example
 (async () => {
   console.log("Sleeping 1 second...");
-  await sleep(1000);
+  await sleep(1); // default unit is seconds
   console.log("Woke up!");
 })();
 ```
 
-or just type:
+Or just run the demo:
 
 ```bash
 npm run example
 ```
 
-## API Reference
+---
 
-### String Utils
+## 📘 API Reference
 
-- `capitalize(str)`: Capitalizes the first letter of a string
-- `getRandomString(length)`: Generates a random string of specified length
-- `slugify(str)`: Converts a string to URL-friendly slug format
+### 🧵 String Utilities
 
-### Random Utils
+- `capitalize(str)`: Capitalizes the first character of a string.
+- `getRandomString(length)`: Generates a random alphanumeric string.
+- `slugify(str)`: Converts a string into a URL-friendly slug.
 
-- `getRandomNumber(min, max, decimalPlaces)`: Generates a random number between min and max
-- `randomColor()`: Generates a random hex color code
-- `shuffleArray(arr)`: Randomly shuffles an array
+### 🎲 Random Utilities
 
-### Time Utils
+- `getRandomNumber(min, max, decimalPlaces?)`: Returns a random number. If `decimalPlaces` is omitted, returns an integer.
+- `randomColor()`: Generates a random hex color (e.g., `#3f9ad6`).
+- `randomHex(length)`: Returns a random hex string of a given length.
+- `shuffleArray(arr)`: Shuffles an array using the Fisher–Yates algorithm.
+- `getRandomElements(arr, count)`: Picks random `count` elements from the array.
 
-- `getTime(timestamp)`: Formats a timestamp into "YYYY-MM-DD HH:mm:ss"
-- `sleep(ms)`: Creates a promise that resolves after specified milliseconds
+### ⏱️ Time Utilities
 
-### Array Utils
+- `getTime(timestamp)`: Formats a timestamp into `"YYYY-MM-DD HH:mm:ss"`.
+- `sleep(value, unit?)`: Asynchronously sleeps. Supports units: `"ns"`, `"μs"`, `"ms"`, `"s"` (default), `"m"`, `"h"`.
 
-- `groupBy(array, keyFn)`: Groups array items by a key function
+### 🧮 Array Utilities
 
-### Misc Utils
+- `groupBy(array, keyFn)`: Groups array items based on the return value of a key function.
 
-- `debounce(fn, delay)`: Creates a debounced function
-- `throttle(fn, interval)`: Creates a throttled function
-- `isEmpty(obj)`: Checks if an object is empty
-- `clearConsole()`: Clears the console (cross-platform)
+### 🧰 Miscellaneous Utilities
 
-## License
+- `debounce(fn, delay)`: Returns a debounced version of `fn`.
+- `throttle(fn, interval)`: Returns a throttled version of `fn`.
+- `isEmpty(obj)`: Checks if an object has no enumerable keys.
+- `clearConsole()`: Clears the terminal screen (cross-platform).
 
-MIT © meo-forkcy
+---
+
+## 🪪 License
+
+MIT © [meo-forkcy](https://github.com/meo-forkcy)
+
+
+
+````

@@ -4,4 +4,5 @@ module.exports = {
   ...require("./lib/time"),
   ...require("./lib/array"),
   ...require("./lib/misc"),
+  ...require("./lib/cryptography"),
 };

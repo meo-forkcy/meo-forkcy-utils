@@ -16,7 +16,12 @@ console.log("Slugify:", slugify("This Cat is not a Robot!"));
 console.log("Time Now:", getTime(Date.now()));
 
 (async () => {
-  console.log("Sleeping 1 second...");
-  await sleep(1000);
+  await sleep(100000, "ns"); // 100000 nanoseconds
+  await sleep(500, "ms"); // 500 milliseconds
+  await sleep(1, "m"); // 1 minute
+  await sleep(0.5, "h"); // 0.5 hours
+
+  console.log("Sleeping 0.5 second...");
+  await sleep(0.5); // 0.5 seconds or 500 milliseconds
   console.log("Woke up!");
 })();

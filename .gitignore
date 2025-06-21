@@ -1,17 +1,31 @@
 # dependencies
 node_modules/
 
-# dotenv environment files
+# dotenv files
 .env
 .env.*.local
 
+# build output
+dist/
+build/
+
 # logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.eslintcache 
+# test coverage
+coverage/
 
+# IDE/editor
+.vscode/
+.DS_Store
 
+# ESLint
+.eslintcache
+
+# misc
+*.swp
+*.swo
