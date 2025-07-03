@@ -1,4 +1,4 @@
-// eslint.config.js
+// eslint.config.mjs
 export default [
   {
     files: ["**/*.js"],
