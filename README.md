@@ -111,6 +111,15 @@ npm run example
 - `isEmpty(obj)`: Checks if an object has no enumerable keys.
 - `clearConsole()`: Clears the terminal screen (cross-platform).
 
+### 🔑 Cryptography Utilities
+
+- `toHex(str)`: Converts a string to its hexadecimal representation.
+- `atob(base64)`: Decodes a base64-encoded string.
+- `btoa(str)`: Encodes a string as a base64-encoded string.
+- `uuidv4()`: Generates a version 4 UUID.
+- `uuidv3(namespace, name)`: Generates a version 3 UUID.
+- `uuidv5(namespace, name)`: Generates a version 5 UUID.
+
 ---
 
 ## 🪪 License
