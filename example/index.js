@@ -32,6 +32,7 @@ console.log(
 );
 console.log("To Hex:", toHex("meo_forkcy"));
 console.log("Base64:", btoa("meo_forkcy"));
+console.log("Base64 Decode:", atob("bWVvX2ZvcmtjeQ=="));
 
 (async () => {
   await sleep(100000, "ns"); // 100000 nanoseconds
