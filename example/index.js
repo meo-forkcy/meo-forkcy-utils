@@ -6,6 +6,12 @@ const {
   slugify,
   getTime,
   sleep,
+  uuidv4,
+  uuidv3,
+  uuidv5,
+  toHex,
+  btoa,
+  atob,
 } = require("../index");
 
 console.log("Random Number (1-100):", getRandomNumber(1, 100));
@@ -14,6 +20,18 @@ console.log("Random Color:", randomColor());
 console.log("Capitalize:", capitalize("meo forkcy"));
 console.log("Slugify:", slugify("This Cat is not a Robot!"));
 console.log("Time Now:", getTime(Date.now()));
+
+console.log("Random UUID V4:", uuidv4());
+console.log(
+  "Random UUID V3:",
+  uuidv3("example", "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+);
+console.log(
+  "Random UUID V5:",
+  uuidv5("example", "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+);
+console.log("To Hex:", toHex("meo_forkcy"));
+console.log("Base64:", btoa("meo_forkcy"));
 
 (async () => {
   await sleep(100000, "ns"); // 100000 nanoseconds

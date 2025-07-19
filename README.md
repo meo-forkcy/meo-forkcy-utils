@@ -25,6 +25,11 @@ const {
   slugify,
   getTime,
   sleep,
+  toHex,
+  atob,
+  uuidv4,
+  uuidv3,
+  uuidv5,
 } = require("meo-forkcy-utils");
 ```
 
@@ -42,6 +47,22 @@ console.log("Capitalize:", capitalize("meo forkcy"));
 console.log("Slugify:", slugify("This Cat is not a Robot!"));
 
 console.log("Time Now:", getTime(Date.now()));
+
+console.log("Random UUID V4:", uuidv4());
+
+console.log(
+  "Random UUID V3:",
+  uuidv3("example", "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+);
+
+console.log(
+  "Random UUID V5:",
+  uuidv5("example", "6ba7b810-9dad-11d1-80b4-00c04fd430c8")
+);
+
+console.log("Random HEX:", toHex("meo"));
+
+console.log("Random base64:", atob(btoa("test")));
 
 (async () => {
   console.log("Sleeping 1 second...");

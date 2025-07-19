@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - 2025-07-20
+
+### Changed
+
+- Added UUID v3, v4, v5, toHex, btoa, atob for cryptography
+
 ## [1.0.1] - 2025-06-21
 
 ### Changed
