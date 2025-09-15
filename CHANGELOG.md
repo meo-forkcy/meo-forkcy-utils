@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-09-15
+
+### Added
+
+- Extended `getRandomString`:
+  - Added `extraChars` parameter for custom character sets.
+  - Added `mode` parameter (`concat` or `replace`) to control how custom characters are used.
+- Enhanced `getTime`:
+  - `timestamp` parameter now defaults to `Date.now()` when not provided.
+
+### Changed
+
+- Updated JSDoc examples for `getRandomString` and `getTime`.
+
+---
+
 ## [1.0.2] - 2025-07-20
 
 ### Changed
