@@ -46,6 +46,8 @@ console.log("Capitalize:", capitalize("meo forkcy"));
 
 console.log("Slugify:", slugify("This Cat is not a Robot!"));
 
+console.log("Time Now (2025-01-16 00:00:00):", getTime(1736998800000));
+
 console.log("Time Now:", getTime(Date.now()));
 
 console.log("Random UUID V4:", uuidv4());
