@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2025-09-16
+
+### Added
+
+- Small delay to `clearConsole`.
+
 ## [1.0.3] - 2025-09-15
 
 ### Added
